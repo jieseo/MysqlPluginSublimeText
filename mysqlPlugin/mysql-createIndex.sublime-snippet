@@ -1,0 +1,8 @@
+<snippet>
+    <content>
+        <![CDATA[
+CREATE INDEX `idx_a_b_c` ON `tb1`(`a`, `b`, `c`);
+		]]>
+    </content>
+    <tabTrigger>createindex</tabTrigger>
+</snippet>

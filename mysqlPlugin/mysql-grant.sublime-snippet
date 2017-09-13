@@ -1,0 +1,20 @@
+<snippet>
+    <content>
+        <![CDATA[
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER ON 数据库名.* TO 数据库名@localhost IDENTIFIED BY '密码';
+
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON vtdc.employee TO joe@10.163.225.87 IDENTIFIED BY '123';
+给来自10.163.225.87的用户joe分配可对数据库vtdc的employee表进行select,insert,update,delete,create,drop等操作的权限，并设定口令为123。
+
+GRANT ALL PRIVILEGES ON vtdc.* TO joe@10.163.225.87 IDENTIFIED BY '123';
+给来自10.163.225.87的用户joe分配可对数据库vtdc所有表进行所有操作的权限，并设定口令为123。
+
+GRANT ALL PRIVILEGES ON *.* TO joe@10.163.225.87 IDENTIFIED BY '123';
+给来自10.163.225.87的用户joe分配可对所有数据库的所有表进行所有操作的权限，并设定口令为123。
+
+GRANT ALL PRIVILEGES ON *.* TO joe@localhost IDENTIFIED BY '123';
+给本机用户joe分配可对所有数据库的所有表进行所有操作的权限，并设定口令为123。
+		]]>
+    </content>
+    <tabTrigger>grant</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content>
+        <![CDATA[
+CREATE DATABASE IF NOT EXISTS `my_db` DEFAULT CHARSET utf8 COLLATE utf8_general_ci; 
+		]]>
+    </content>
+    <tabTrigger>createdatabase</tabTrigger>
+</snippet>

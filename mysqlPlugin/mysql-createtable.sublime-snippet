@@ -1,0 +1,18 @@
+<snippet>
+    <content>
+        <![CDATA[
+CREATE TABLE `tb_user` (
+   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户ID',
+   `username` varchar(40) DEFAULT '' COMMENT '用户登录名',
+   `password` char(32) DEFAULT NULL COMMENT '密码',
+   `nickname` varchar(50) NOT NULL COMMENT '别名',  
+   `usertype` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0:普通',
+   `wealth` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '财富等级',
+   `signature` text COMMENT '用户签名',   
+   PRIMARY KEY (`id`),
+   KEY `username` (`username`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+		]]>
+    </content>
+    <tabTrigger>createtable</tabTrigger>
+</snippet>
